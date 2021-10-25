@@ -1,0 +1,18 @@
+{
+  "name": "binomtod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "delay": "^5.0.0",
+    "moment": "^2.29.1",
+    "puppeteer": "^10.4.0",
+    "readline-sync": "^1.4.10"
+  }
+}
