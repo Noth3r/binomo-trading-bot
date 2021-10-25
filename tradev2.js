@@ -119,6 +119,7 @@ const readlineSync = require("readline-sync");
   let kompen = ["14000", "32000", "74000", "170000"];
 
   await page.evaluate(`document.querySelector("[id='amount-counter']").value = ${kompen[0]}`)
+  await page.click("vui-input-number > input[type=text]");
 
   console.log("");
   const time = new Date();
@@ -191,7 +192,7 @@ const readlineSync = require("readline-sync");
     }
     if (ifKompen) {
       await page.evaluate(`document.querySelector("[id='amount-counter']").value = ${kompen[i]}`)
-
+      await page.click("vui-input-number > input[type=text]");
     }
   }
 })();
