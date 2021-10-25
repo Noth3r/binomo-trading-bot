@@ -14,7 +14,7 @@ This project is only for study.
 
 ## Todo:
 
-- Fixed amount type bug
+- Fixed amount type bug (fixed)
 
 ## Installation & Usage
 

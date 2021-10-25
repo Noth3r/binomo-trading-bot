@@ -48,7 +48,7 @@ const readlineSync = require("readline-sync");
   }
 
   if (loginRequired) {
-    readlineSync.question("Press any key if done login...");
+    readlineSync.question("Press enter if done login...");
     console.log("");
 
     if ((await page.$("#avatar > vui-badge > vui-avatar > img")) !== null) {
@@ -118,10 +118,7 @@ const readlineSync = require("readline-sync");
 
   let kompen = ["14000", "32000", "74000", "170000"];
 
-  await page.click("vui-input-number > input[type=text]", {
-    clickCount: 3,
-  });
-  await page.type("vui-input-number > input[type=text]", kompen[0]);
+  await page.evaluate(`document.querySelector("[id='amount-counter']").value = ${kompen[0]}`)
 
   console.log("");
   const time = new Date();
@@ -193,10 +190,8 @@ const readlineSync = require("readline-sync");
       console.log("");
     }
     if (ifKompen) {
-      await page.click("vui-input-number > input[type=text]", {
-        clickCount: 3,
-      });
-      await page.type("vui-input-number > input[type=text]", kompen[i]);
+      await page.evaluate(`document.querySelector("[id='amount-counter']").value = ${kompen[i]}`)
+
     }
   }
 })();
