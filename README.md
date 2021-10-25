@@ -20,13 +20,13 @@ This project is only for study.
 
 ```bash
 npm install
-```
-
-then
-
-```bash
+# then
 node tradev2
 ```
+
+## Preview
+![binom](https://user-images.githubusercontent.com/77542170/138682151-1b40c1fc-a933-4e2f-94a2-e00f14c1d544.png)
+
 
 ## Contributing
 
